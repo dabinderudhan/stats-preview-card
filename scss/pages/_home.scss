@@ -1,0 +1,116 @@
+.container {
+  background-color: $color-card-background;
+  border-radius: 15px;
+  gap: 2rem;
+  text-align: center;
+}
+
+.hero {
+  &-box {
+    position: relative;
+  }
+
+  &-image {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    background-color: hsla(277, 64%, 61%, 0.5);
+  }
+}
+
+.stats {
+  padding-inline: 2.5rem;
+  gap: 2rem;
+
+  &-header {
+    &--heading {
+      color: $color-main-heading-stats;
+      font-size: 24px;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+      font-weight: $fw-heading;
+      font-family: $ff-heading;
+
+      & span {
+        color: $color-accent;
+      }
+    }
+
+    &--para {
+      font-family: $ff-body;
+      font-weight: $fw-para;
+    }
+  }
+
+  &-section {
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+    &--subheading {
+      color: $color-main-heading-stats;
+      font-size: 24px;
+    }
+
+    &--subpara {
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    text-align: left;
+    max-width: 1200px;
+  }
+
+  .hero-box {
+    grid-area: hero-image;
+    align-self: stretch;
+  }
+
+  .hero-image {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .hero-overlay {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .stats {
+    grid-area: stats;
+    padding: clamp(1rem, 7vw, 3rem);
+    gap: 5rem;
+
+    &-header--para {
+      font-size: 14px;
+    }
+
+    &-section {
+      width: 100%;
+      flex-direction: row;
+      justify-content: start;
+      margin-bottom: 0;
+      gap: 4rem;
+
+      &--subheading {
+        font-size: 18px;
+      }
+
+      &--subpara {
+        font-size: 12px;
+      }
+    }
+  }
+}

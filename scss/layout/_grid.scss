@@ -1,0 +1,7 @@
+@media (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-areas: "stats hero-image";
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
