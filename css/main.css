@@ -21,7 +21,7 @@ main {
     margin: 10rem; } }
 
 body {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-family: "inter"; }
 
 .flex {
@@ -70,14 +70,14 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 15px 15px 0 0;
-  background-color: rgba(170, 92, 219, 0.5); }
+  background-color: rgba(126, 20, 192, 0.6); }
 
 .stats {
   padding-inline: 2.5rem;
   gap: 2rem; }
   .stats-header--heading {
     color: white;
-    font-size: 24px;
+    font-size: 2rem;
     line-height: 1.3;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -93,15 +93,15 @@ body {
     text-transform: uppercase; }
     .stats-section--subheading {
       color: white;
-      font-size: 24px; }
+      font-size: 1.5rem; }
     .stats-section--subpara {
-      font-size: 13px;
+      font-size: 0.8125rem;
       letter-spacing: 1px; }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .container {
     text-align: left;
-    max-width: 1200px; }
+    max-width: 75rem; }
   .hero-box {
     grid-area: hero-image;
     align-self: stretch; }
@@ -114,7 +114,7 @@ body {
     padding: clamp(1rem, 7vw, 3rem);
     gap: 5rem; }
     .stats-header--para {
-      font-size: 14px; }
+      font-size: 0.875rem; }
     .stats-section {
       width: 100%;
       flex-direction: row;
@@ -122,6 +122,6 @@ body {
       margin-bottom: 0;
       gap: 4rem; }
       .stats-section--subheading {
-        font-size: 18px; }
+        font-size: 1.125rem; }
       .stats-section--subpara {
-        font-size: 12px; } }
+        font-size: 0.75rem; } }

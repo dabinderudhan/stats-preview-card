@@ -24,7 +24,7 @@
     width: 100%;
     height: 100%;
     border-radius: 15px 15px 0 0;
-    background-color: hsla(277, 64%, 61%, 0.5);
+    background-color: rgba(126, 20, 192, 0.6);
   }
 }
 
@@ -35,7 +35,7 @@
   &-header {
     &--heading {
       color: $color-main-heading-stats;
-      font-size: 24px;
+      font-size: 2rem;
       line-height: 1.3;
       margin-bottom: 1rem;
       font-weight: $fw-heading;
@@ -59,20 +59,20 @@
 
     &--subheading {
       color: $color-main-heading-stats;
-      font-size: 24px;
+      font-size: 1.5rem;
     }
 
     &--subpara {
-      font-size: 13px;
+      font-size: 0.8125rem;
       letter-spacing: 1px;
     }
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .container {
     text-align: left;
-    max-width: 1200px;
+    max-width: 75rem;
   }
 
   .hero-box {
@@ -94,7 +94,7 @@
     gap: 5rem;
 
     &-header--para {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     &-section {
@@ -105,11 +105,11 @@
       gap: 4rem;
 
       &--subheading {
-        font-size: 18px;
+        font-size: 1.125rem;
       }
 
       &--subpara {
-        font-size: 12px;
+        font-size: 0.75rem;
       }
     }
   }
